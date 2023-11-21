@@ -1,0 +1,208 @@
+.header {
+    height: 90px;
+    @include flex(center, space-between);
+
+
+
+    &__content {
+        @include flex(center, space-between);
+    }
+
+    &__burger {
+        display: none;
+        border: none!important; 
+        background-color: inherit;
+
+        @media screen and (max-width: 900px) {
+            display: inherit;
+        }
+
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    &__logo {
+        color: #000;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 55px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #010334;
+        text-align: center;
+        gap: 26px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+        
+    }
+
+    &__nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        &:hover {
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+
+    }
+    &__nav span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+
+        
+        &:hover {
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+
+    }
+    &__nav button {
+        &:hover {
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    &__login {
+        color: #010334;
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+
+        &:hover {
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        
+
+
+
+        @media screen and (max-width:900px) {
+            display: none;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 223px;
+        height: 49px;
+        border: 2px solid #2156FA;
+        background: #2156FA;
+        color: #fff;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        &:hover {
+            color: #000000;
+            background: #ffffff;
+            transition: all 0.5s ease-in-out;
+        }
+
+
+    }
+
+    // &__button {
+    //     padding: 20px 20px;
+    // }
+
+    &__madalbtn {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    &__btn2 {
+        padding-top: 20px;
+    }
+
+    &__menuit{
+        width: 193px;
+        height: 148px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: var(--grey-scale-grey-scale-0, #FFF);
+        padding-top: 5px;
+        border-radius: 5px;
+        
+
+    }
+
+    &__menuitem{
+        border-radius: 5px;
+        color: #000;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24px; /* 141.176% */
+        padding-left: 30px;
+        padding: 6px;
+        background: inherit;
+        border: none;
+        &:hover {
+            background-color:#f2f2f2;
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    &__servis{
+        color: #000;
+        font-weight: 700;
+        padding-left: 5px;
+
+        &:hover {
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    &__serviss{
+        color: #000;
+        font-weight: 600;
+        padding-left: 5px;
+        cursor: pointer;
+        margin-bottom: 9px;
+
+        &:hover {
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+}

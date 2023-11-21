@@ -1,0 +1,119 @@
+.settings{
+
+    @include flex(center,center);
+    flex-direction: column;
+
+
+
+
+    &__title{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #E0E4F0;
+
+
+        & p{
+            color: var(--grey-scale-grey-scale-100, #1E201F);
+            font-family: Inter;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 125%;
+        }
+    }
+
+
+    .content{
+        margin-top: 52px;
+        width: 100%;
+
+
+        &__title{
+            color: var(--grey-scale-grey-scale-100, #1E201F);
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 125%;
+        }
+
+
+        .form{
+            margin-top: 42px;
+            @include flex(start,start);
+            flex-direction: column;
+            gap: 29px;
+            width: 100%;
+
+
+
+            .item{
+                @include flex(start,start);
+                flex-direction: column;
+                gap: 5px;
+                width: 100%;
+
+
+                &__text{
+                    width: 410px;
+                    @include flex(center,space-between);
+                    padding-bottom: 5px;
+                    padding-left: 10px;
+
+
+
+                    & p{
+                        color: #292D34;
+                        font-family: Roboto;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 11px;
+                    }
+
+                    & span{
+                        color: #292D34;
+                        font-family: Roboto;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 11px;
+                        letter-spacing: -0.24px;
+                        text-decoration-line: underline;
+                        cursor: pointer;
+                    }
+
+                }
+
+
+                &__input{
+                    width: 422px;
+                    height: 48px;
+                    flex-shrink: 0;
+                    border-radius: 9px;
+                    border: 1px solid #D6D9DE;
+
+                    &::placeholder{
+                        color: #87909E;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding-left: 20px;
+                    }
+                }
+
+                &__label{
+                    position: absolute;
+                    top: 0;
+                }
+
+
+                &__wrapper{
+                    position: relative;
+                }
+            }
+        }
+    }
+}

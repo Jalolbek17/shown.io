@@ -1,0 +1,71 @@
+.form_R {
+  display: block;
+  position: absolute;
+  width: 880px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  @include media(1024) {
+    width: 95%;
+    padding: 10px;
+  }
+  @include media(720) {
+    margin-top: 20px;
+  }
+  .title {
+    text-transform: uppercase;
+  }
+  .sub_title {
+    display: block;
+    width: 100%;
+    color: $silver1;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  label {
+    margin-left: -35px;
+  }
+
+  .double_ {
+    .col {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      padding-right: 20px;
+
+      @include media(720) {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+  .names_ {
+    input {
+      padding-left: 10px;
+    }
+  }
+  .query_ {
+    max-width: 300px;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    clear: both;
+
+    ::before {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .pass_ {
+    @include media(720) {
+      margin-left: -24px !important;
+    }
+  }
+}

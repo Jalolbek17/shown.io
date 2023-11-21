@@ -1,0 +1,159 @@
+.microsoft-ads {
+    
+    @include wihe(100%, 920px);
+    background: #EEF0FF;
+    margin-bottom: 210px;
+
+    &__img {
+
+        &-left {
+            width: 500px;
+            height: 354px;
+            @media screen and (max-width: 1750px) {
+               width: 400px;
+               height: 300px;
+            }
+            @media screen and (max-width: 1600px) {
+                width: 350px;
+                height: 250px;
+             }
+             @media screen and (max-width: 1500px) {
+                width: 280px;
+                height: 200px;
+             }
+             @media screen and (max-width: 1300px) {
+                display: none;
+             }
+        }
+
+        &-right {
+            width: 370px;
+height: 429px;
+flex-shrink: 0;
+            @media screen and (max-width: 1750px) {
+                width: 300px;
+                height: 330px;
+             }
+             @media screen and (max-width: 1600px) {
+                width: 250px;
+                height: 280px;
+             }
+             @media screen and (max-width: 1500px) {
+                width: 200px;
+                height: 200px;
+             }
+             @media screen and (max-width: 1300px) {
+                display: none;
+             }
+        }
+    }
+
+    &__content {
+        width: 1165px;
+        margin-top: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 1410px) {
+           width: 1000;
+           
+         }
+         @media screen and (max-width: 1290px) {
+           width: 100%;
+         }
+       
+
+        @media screen and (max-width: 770px) {
+            margin-top: 100px;
+        }
+
+        @media screen and (max-width: 1415px) {
+            padding-left: 50px;
+        }
+        @media screen and (max-width: 1350px) {
+            padding-left: 90px;
+        }
+        @media screen and (max-width: 1300px) {
+            padding: unset;
+        }
+        
+
+        &-text {width: 100%;
+            @include flex(center, center);
+            flex-direction: column;
+
+            &__title {
+                width: 831px;
+                color: #010334;
+                text-align: center;
+                font-weight: 500;
+                line-height: 80px;
+                margin-bottom: 50px;
+
+                @media screen and (max-width: 1000px) {
+                   width: 100%;
+                }
+                @media screen and (max-width: 770px) {
+                    line-height: 60px;
+                    margin-bottom: 30px;
+                }
+
+                @media screen and (max-width: 470px) {
+                    margin-bottom: 30px;
+                }
+
+                @include adaptive-value('font-size', 70, 30);
+                @include adaptive-value('line-height', 80, 45);
+
+
+                /* 114.286% */
+
+                &-blue {
+                    color: #2156FA;
+                }
+
+            }
+
+            &__subtitle {
+                width: 60%;
+                color: #010334;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 19.531px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px;
+                /* 153.6% */
+                margin-bottom: 62px;
+
+            }
+
+            &__button {
+                @include wihe(223px, 49px);
+                padding: 15px 0px 14px 0px;
+                @include flex(center, center);
+                flex-shrink: 0;
+                border: 2px solid #2156FA;
+                background: #2156FA;
+                color: #FFF;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                /* 141.176% */
+                transition: all ease-in-out 0.2s;
+                margin-bottom: 213px;
+
+                &:hover {
+                    background-color: #FFF;
+                    color: #2156FA;
+                }
+
+            }
+        }
+
+
+    }
+}

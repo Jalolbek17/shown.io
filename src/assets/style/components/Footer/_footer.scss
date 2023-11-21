@@ -1,0 +1,139 @@
+.footer{
+
+    background: var(--grey-scale-grey-scale-0, #FFF);
+    box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, 0.05);
+    &__content{
+        padding-top: 60px;
+        padding-bottom: 101px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        @include media(882){
+            display: grid;
+        }
+    }
+    
+    &__logo {
+        color: #000;
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 24px;
+        padding-bottom: 18px;
+    }
+
+    &__cantact{
+        display: flex;
+        @include media(516){
+            display: grid;
+        }
+    }
+    &__leftcan{
+        @include media(516){
+            padding-top: 40px;
+        }
+    }
+    &__title{
+        width: 49%;
+        padding-bottom: 34px;
+        color: #696969;
+        font-size: 15.875px;
+        font-weight: 500;
+        line-height: 20px; 
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        
+    }
+    &__icons button{
+        background-color: inherit;
+        border: none;
+    }
+    &__sub{
+        color: #717677;
+        font-size: 15.625px;
+        font-weight: 500;
+        line-height: 24px; 
+    }
+    &__titless{
+        color: #010334;
+        font-size: 15.875px;
+        font-weight: 500;
+        line-height: 24px; 
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
+    &__titless button{
+        padding-bottom: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        background-color: inherit;
+        border: none;
+
+        &:hover {
+            color: #2156FA;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    &__ads{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__linx{
+        background: #F3F3F3;
+    }
+    &__mail{
+        color: #626262;
+        padding-top:32px ;
+        padding-bottom:31px ;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px; 
+        @include media(522){
+            font-size: 14;
+        }
+    }
+    &__other{
+        display: contents;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media(882){
+            display: flex;
+            align-items: inherit;
+            padding-top: 20px;
+        }
+        @include media(516){
+            display: grid;
+        }
+    }
+    &__linx{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media(522){
+            display: grid;
+        }
+    }
+    &__after{
+        color: #626262;
+        padding-top:32px ;
+        padding-bottom:31px ;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        
+        @include media(522){
+            padding-top: 0;
+            font-size: 14;
+        }
+    }
+
+ 
+}

@@ -1,0 +1,124 @@
+.instagram-ads__work {
+    width: 100%;
+    @include flex(center, center);
+
+
+    &-title {
+        margin-top: 190px;
+        margin-bottom: 120px;
+        color: #010334;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 80px;
+
+        &__blue {
+            color: #2156FA;
+        }
+    }
+
+
+    &-cards {
+        @include flex(center, center);
+        gap: 40px;
+        margin-bottom: 260px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+
+        &__card {
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.07);
+
+            @include wihe(410px, 563px);
+            @include flex(center, center);
+            flex-direction: column;
+            transition: 0.7s;
+
+            @media screen and (max-width: 1050px) {
+                width: 390px;
+                height: 500px;
+            }
+
+            @media screen and (max-width: 900px) {
+                width: 100%;
+            }
+
+            &:hover {
+
+                transform: scale(1.1);
+                z-index: 9;
+            }
+
+
+            &-img {
+                @include wihe(245px, 200px);
+
+                flex-shrink: 0;
+
+                @media screen and (max-width: 1000px) {
+                    width: 220px;
+                    height: 180px;
+                }
+
+                @media screen and (max-width: 935px) {
+
+                    width: 190px;
+                    height: 140px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    @include wihe(245px, 200px);
+                }
+            }
+
+            &-title {
+                text-align: center;
+                color: #000;
+                font-family: 'Inter';
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 80px;
+
+                /* 266.667% */
+                @media screen and (max-width: 1000px) {
+                    font-size: 25px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    font-size: 30px;
+                }
+            }
+
+            &-text {
+                text-align: center;
+                color: #010334;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px;
+                padding-left: 35px;
+                padding-right: 35px;
+                padding-bottom: 35px;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 15px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    font-size: 18px;
+                }
+
+            }
+        }
+    }
+}

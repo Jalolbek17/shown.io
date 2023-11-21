@@ -1,0 +1,245 @@
+.dashboardMenu{
+    width: 100%;
+
+
+    &__row{
+        height: 100%;
+        @include flex(start,space-between);
+        flex-direction: column;
+        padding: 40px 14px 0px 27px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        border-right: 1px solid var(--grey-scale-grey-scale-10, #E8E8E9);
+        background: var(--background-blue, #F7F8FA);
+
+
+
+
+
+
+
+        @include media(900){
+            display: none;
+
+        }
+    }
+
+
+    &__popup{
+
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+
+
+
+      &.open{
+        height: 100%;
+        @include flex(start,space-between);
+        flex-direction: column;
+        padding: 40px 14px 0px 27px;
+        left: 0;
+        top: 0;
+        border-right: 1px solid var(--grey-scale-grey-scale-10, #E8E8E9);
+        background: var(--background-blue, #F7F8FA);
+        opacity: 1;
+        position: fixed;
+        visibility: visible;
+       }
+    }
+
+
+    .info{
+        @include flex(start,start);
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+
+
+        &__logo p{
+            color: #000;
+            font-family: Inter;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+
+
+        .navbar{
+            @include flex(start,start);
+            flex-direction: column;
+            width: 100%;
+
+
+
+
+            &__link{
+                @include flex(center,start);
+                gap: 12px;
+                padding: 14px;
+                padding-left: 5px;
+                border-radius: 6px;
+                width: 100%;
+                border: 1px solid transparent;
+
+
+
+
+                & span{
+                    color: var(--content-100, #1A2433);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 126%;
+                }
+
+                &:hover{
+                    background-color: #E0ECFF;
+                    width: 100%;
+                    border-radius: 6px;
+
+                }
+            }
+        }
+    }
+
+    .func{
+        @include flex(start,start);
+        flex-direction: column;
+
+
+        &__button{
+            display: flex;
+            padding: 12px;
+            width: 212px;
+            align-items: center;
+            gap: 12px;
+            flex: 1 0 0;
+            border-radius: 6px;
+            border: 0.5px solid var(--Primary-70, #0068B9);
+            background: var(--Primary-10, #E0ECFF);
+            margin-bottom: 10px;
+
+
+            & span{
+                color: var(--Primary-70, #0068B9);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 126%;
+            }
+        }
+
+
+
+        .account{
+            @include flex(center,space-between);
+            width: 100%;
+            padding: 16px 0px 16px 7px;
+            cursor: pointer;
+
+
+            &__content{
+                @include flex(center,center);
+                gap: 12px;
+            }
+
+
+            &__logo{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background: var(--Primary-50, #3490F6);
+                @include flex(center,center);
+
+
+                & span{
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 124%;
+                }
+
+            }
+
+
+            &__name{
+                color: var(--content-100, #1A2433);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 126%;
+            }
+        }
+    }
+
+
+    .mobile{
+        display: none;
+        width: 100%;
+
+
+        @include media(900){
+            @include flex(center,space-between);
+            flex-direction: row;
+            width: 100%
+        }
+
+
+
+        .account{
+            @include flex(center,space-between);
+            width: 100%;
+            padding: 16px 0px 16px 7px;
+            cursor: pointer;
+
+
+            &__content{
+                @include flex(center,center);
+                gap: 12px;
+            }
+
+
+            &__logo{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background: var(--Primary-50, #3490F6);
+                @include flex(center,center);
+
+
+                & span{
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 124%;
+                }
+
+            }
+
+
+            &__name{
+                color: var(--content-100, #1A2433);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 126%;
+            }
+        }
+
+
+    }
+}

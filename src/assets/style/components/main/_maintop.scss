@@ -1,0 +1,51 @@
+main {
+    background: #EEF0FF;
+}
+
+.main__subtitles {
+    @include flex(center, space-between);
+    padding-top: 83px;
+    padding-bottom: 35px;
+
+    @media screen and (max-width: 1215px) {
+        display: grid;
+        gap: 10px;
+    }
+}
+
+.main__sub {
+    color: #010334;
+    font-size: 50.5px;
+    font-weight: 500;
+    line-height: 80px;
+
+    @media screen and (max-width: 550px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+.main__login {
+    color: #010334;
+    font-size: 19.844px;
+    font-weight: 300;
+    display: flex;
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+.main__pbg {
+    margin-top: 40px;
+}
+
+.main__img img {
+    width: 100%;
+}
+
+#qq {
+    @media screen and (max-width: 1170px) {
+
+        display: flex !important;
+        flex-direction: column-reverse !important
+    }
+}

@@ -1,0 +1,26 @@
+.mainbot {
+    padding-top: 207px;
+
+    &__subt {
+        color: #2156FA;
+        text-align: center;
+        padding-bottom: 99px;
+        font-weight: 600;
+        line-height: 60px;
+        @include adaptive-value('font-size', 55, 45) 
+       
+    }
+
+    &__img {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 148px;
+    }
+
+    &__img img {
+        width: 100%;
+    }
+
+}
